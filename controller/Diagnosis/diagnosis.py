@@ -5,22 +5,24 @@ class DataSender:
     @staticmethod
     def send_to_predict_api():
         if request.method == 'POST':
-            predict_api = 'http://127.0.0.1:5000/api/patient/diagnosis'
+            sensor_data_receiver_api = 'http://127.0.0.1:5000/api//patient/receive-sensor-data'
 
             data = request.get_json()
 
-            BPM = data.get('BPM')
-            ECG = data.get('ECG')
+            BPM = data.get('thalachh')
+            ECG = data.get('restecg')
 
         try:
             sensor_data = {
-                "BPM": BPM,
-                "ECG": ECG,
+                "thalachh": BPM,
+                "restecg": ECG,
             }
 
-            response = requests.post(predict_api, json=sensor_data)
+            response = requests.post(sensor_data_receiver_api, json=sensor_data)
             response_data = response.json
             
+            print(response_data)
+
             return jsonify({
                 "status:": "success",
                 "prediction": response_data
