@@ -46,6 +46,7 @@ void loop() {
     handleServer();
     handleBPM();
     handleECG();
+    delay(1000);
 }
 
 void setupWiFiServer() {
@@ -54,7 +55,7 @@ void setupWiFiServer() {
     Serial.print(WIFI_SSID);
 
     while (WiFi.status() != WL_CONNECTED) {
-        delay(3000);
+        delay(500);
         Serial.print(".");
     }
     Serial.println("\nConnected!");
@@ -108,8 +109,13 @@ void handleECG() {
         Serial.println("Leads off detected!");
     } else {
         int ecgValue = analogRead(ECG_PIN);
-        Serial.print("[ECG] ");
-        Serial.println(ecgValue);
+
+        float ecgVoltage = (ecgValue / 1023.0) * 3.3;
+
+        Serial.print("[ECG ADC] ");
+        Serial.print(ecgValue);
+        Serial.print(" | [ECG Voltage] ");
+        Serial.println(ecgVoltage, 3);
     }
     delay(10);
 }

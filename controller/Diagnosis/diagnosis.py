@@ -5,7 +5,7 @@ class DataSender:
     @staticmethod
     def send_to_predict_api():
         if request.method == 'POST':
-            sensor_data_receiver_api = 'http://127.0.0.1:5000/api//patient/receive-sensor-data'
+            sensor_data_receiver_api = 'http://127.0.0.1:5000/api/patient/receive-sensor-data'
 
             data = request.get_json()
 
@@ -20,8 +20,6 @@ class DataSender:
 
             response = requests.post(sensor_data_receiver_api, json=sensor_data)
             response_data = response.json
-            
-            print(response_data)
 
             return jsonify({
                 "status:": "success",
