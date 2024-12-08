@@ -7,8 +7,8 @@
 #include <ArduinoJson.h>        
 
 
-#define WIFI_SSID "WiFi 35"
-#define WIFI_PSWD "doipassroi"
+#define WIFI_SSID "Thanh Cong"
+#define WIFI_PSWD "19962002"
 
 
 #define ECG_PIN A0
@@ -46,6 +46,7 @@ void loop() {
     handleServer();
     handleBPM();
     handleECG();
+    delay(1000);
 }
 
 void setupWiFiServer() {
@@ -108,8 +109,13 @@ void handleECG() {
         Serial.println("Leads off detected!");
     } else {
         int ecgValue = analogRead(ECG_PIN);
-        Serial.print("[ECG] ");
-        Serial.println(ecgValue);
+
+        float ecgVoltage = (ecgValue / 1023.0) * 3.3;
+
+        Serial.print("[ECG ADC] ");
+        Serial.print(ecgValue);
+        Serial.print(" | [ECG Voltage] ");
+        Serial.println(ecgVoltage, 3);
     }
     delay(10);
 }
@@ -155,13 +161,15 @@ void postHeartbeatToAPI(int irValue, float bpm, int avgBpm, int ecgValue) {
         WiFiClient client;
         HTTPClient http;
 
-        String serverPath = "http://192.168.1.17:5000/api/add-heartbeat"; 
+        String serverPath = "http://192.168.100.188:5000/api/send-to-predict-api"; 
+        // http://192.168.100.188:5000/api/send-to-predict-api
+        // http://192.168.1.17:5000/api/add-heartbeat
 
         StaticJsonDocument<200> jsonData;
         jsonData["IR"] = irValue;
-        jsonData["BPM"] = bpm;
+        jsonData["thalachh"] = bpm;
         jsonData["AvgBPM"] = avgBpm;
-        jsonData["ECG"] = ecgValue;
+        jsonData["restecg"] = ecgValue;
 
         String jsonString;
         serializeJson(jsonData, jsonString);
