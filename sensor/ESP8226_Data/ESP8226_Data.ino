@@ -46,7 +46,6 @@ void loop() {
     handleServer();
     handleBPM();
     handleECG();
-    delay(1000);
 }
 
 void setupWiFiServer() {
@@ -109,13 +108,8 @@ void handleECG() {
         Serial.println("Leads off detected!");
     } else {
         int ecgValue = analogRead(ECG_PIN);
-
-        float ecgVoltage = (ecgValue / 1023.0) * 3.3;
-
-        Serial.print("[ECG ADC] ");
-        Serial.print(ecgValue);
-        Serial.print(" | [ECG Voltage] ");
-        Serial.println(ecgVoltage, 3);
+        Serial.print("[ECG] ");
+        Serial.println(ecgValue);
     }
     delay(10);
 }
@@ -123,7 +117,7 @@ void handleECG() {
 void handleBPM() {
     long irValue = particleSensor.getIR();
 
-    if (checkForBeat(irValue) == true) {
+    if (irValue > 50000 && checkForBeat(irValue) == true) {
         long delta = millis() - lastBeat;
         lastBeat = millis();
 
@@ -134,10 +128,18 @@ void handleBPM() {
             rateSpot %= RATE_SIZE;
 
             beatAvg = 0;
-            for (byte x = 0; x < RATE_SIZE; x++)
+            for (byte x = 0; x < RATE_SIZE; x++) {
                 beatAvg += rates[x];
+            }
             beatAvg /= RATE_SIZE;
         }
+    } else if (irValue < 50000) {
+        beatsPerMinute = 0;
+        beatAvg = 0;
+        for (byte x = 0; x < RATE_SIZE; x++) {
+            rates[x] = 0;
+        }
+        Serial.print(" No finger?");
     }
 
     Serial.print("IR=");
@@ -145,24 +147,20 @@ void handleBPM() {
     Serial.print(", BPM=");
     Serial.print(beatsPerMinute);
     Serial.print(", Avg BPM=");
-    Serial.print(beatAvg);
-
-    if (irValue < 50000)
-        Serial.print(" No finger?");
-
-    Serial.println();
+    Serial.println(beatAvg);
 
     int ecgValue = analogRead(ECG_PIN);
     postHeartbeatToAPI(irValue, beatsPerMinute, beatAvg, ecgValue);
 }
+
 
 void postHeartbeatToAPI(int irValue, float bpm, int avgBpm, int ecgValue) {
     if (millis() - lastPostTime >= POST_INTERVAL) {
         WiFiClient client;
         HTTPClient http;
 
-        String serverPath = "http://192.168.100.188:5000/api/send-to-predict-api"; 
-        // http://192.168.100.188:5000/api/send-to-predict-api
+        String serverPath = "http://192.168.100.123:5000/api/send-to-predict-api"; 
+        // http://192.168.100.123:5000/api/send-to-predict-api
         // http://192.168.1.17:5000/api/add-heartbeat
 
         StaticJsonDocument<200> jsonData;
