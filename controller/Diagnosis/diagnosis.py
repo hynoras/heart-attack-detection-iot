@@ -6,15 +6,17 @@ class DataSender:
     def send_to_predict_api():
         if request.method == 'POST':
             # manual_receiver_api = 'http://127.0.0.1:5000/api/patient/manual/receive-sensor-data'
-            scheduled_receiver_api = 'http://127.0.0.1:5000/api/patient/scheduled/receive-sensor-data'
+            scheduled_receiver_api = 'http://127.0.0.1:5000/api/patient/scheduled/add-sensor-data'
 
             data = request.get_json()
-
+            
+            id = data.get('unique_id')
             BPM = data.get('thalachh')
             ECG = data.get('restecg')
 
         try:
             sensor_data = {
+                "id": id,
                 "thalachh": BPM,
                 "restecg": ECG,
             }

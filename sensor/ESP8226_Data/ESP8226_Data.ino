@@ -133,11 +133,15 @@ void handleBPM() {
 
 void postHeartbeatToAPI(int irValue, float bpm, int avgBpm, int ecgValue) {
   if (millis() - lastPostTime >= POST_INTERVAL) {
+    uint32_t chipId = ESP.getChipId();
+    String uniqueID = "ESP8266_" + String(chipId);
+
     WiFiClient client;
     HTTPClient http;
     String serverPath = "http://192.168.100.188:5000/api/send-to-predict-api";
     StaticJsonDocument<200> jsonData;
 
+    jsonData["unique_id"] = uniqueID;
     jsonData["IR"] = irValue;
     jsonData["thalachh"] = bpm;
     jsonData["AvgBPM"] = avgBpm;
