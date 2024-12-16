@@ -138,7 +138,7 @@ void postHeartbeatToAPI(int irValue, float bpm, int avgBpm, int ecgValue) {
 
     WiFiClient client;
     HTTPClient http;
-    String serverPath = "http://192.168.100.188:5000/api/send-to-predict-api";
+    String serverPath = "http://192.168.100.188:5000/api/add-sensor-data";
     StaticJsonDocument<200> jsonData;
 
     jsonData["unique_id"] = uniqueID;

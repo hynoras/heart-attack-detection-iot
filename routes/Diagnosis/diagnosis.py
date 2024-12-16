@@ -6,3 +6,7 @@ diagnosis_route = Blueprint('diagnosis_route', __name__)
 @diagnosis_route.route('/send-to-predict-api', methods=['POST'])
 def add_heartbeat_values():
     return DataSender.send_to_predict_api()
+
+@diagnosis_route.route('/add-sensor-data', methods=['POST'])
+def store_sensor_data():
+    return DataSender.add_sensor_data()
