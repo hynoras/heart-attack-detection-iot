@@ -5,7 +5,8 @@ class DataSender:
     @staticmethod
     def send_to_predict_api():
         if request.method == 'POST':
-            sensor_data_receiver_api = 'http://127.0.0.1:5000/api/patient/receive-sensor-data'
+            # manual_receiver_api = 'http://127.0.0.1:5000/api/patient/manual/receive-sensor-data'
+            scheduled_receiver_api = 'http://127.0.0.1:5000/api/patient/scheduled/receive-sensor-data'
 
             data = request.get_json()
 
@@ -18,12 +19,11 @@ class DataSender:
                 "restecg": ECG,
             }
 
-            response = requests.post(sensor_data_receiver_api, json=sensor_data)
-            response_data = response.json
+            # response_manual = requests.post(manual_receiver_api, json=sensor_data)
+            response_scheduled = requests.post(scheduled_receiver_api, json=sensor_data)
 
             return jsonify({
-                "status:": "success",
-                "prediction": response_data
+                "status:": "success"
             }), 200
         
         except Exception as e:
