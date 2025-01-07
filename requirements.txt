@@ -2,3 +2,5 @@ flask
 pymongo
 python-dotenv
 pymysql
+flask-cors
+requests
