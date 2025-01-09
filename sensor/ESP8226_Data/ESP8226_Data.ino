@@ -29,6 +29,7 @@ void handleServer();
 void handleECG();
 void handleBPM();
 void postHeartbeatToAPI(int irValue, float bpm, int avgBpm, int ecgValue);
+void postHeartbeatToDiagnose(int irValue, float bpm, int avgBpm, int ecgValue);
 void registerBoardID();
 
 void setup() {
@@ -129,6 +130,8 @@ void handleBPM() {
     Serial.println();
     int ecgValue = analogRead(ECG_PIN);
     postHeartbeatToAPI(irValue, beatsPerMinute, beatAvg, ecgValue);
+    delay(1000);
+    postHeartbeatToDiagnose(irValue, beatsPerMinute, beatAvg, ecgValue);
 }
 
 void postHeartbeatToAPI(int irValue, float bpm, int avgBpm, int ecgValue) {
@@ -138,10 +141,41 @@ void postHeartbeatToAPI(int irValue, float bpm, int avgBpm, int ecgValue) {
 
     WiFiClient client;
     HTTPClient http;
-    String serverPath = "http://192.168.100.188:5000/api/add-sensor-data";
+    String serverPath = "http://192.168.100.188:5000/api/send-to-predict-api";
     StaticJsonDocument<200> jsonData;
 
     jsonData["unique_id"] = uniqueID;
+    jsonData["IR"] = irValue;
+    jsonData["thalachh"] = bpm;
+    jsonData["AvgBPM"] = avgBpm;
+    jsonData["restecg"] = ecgValue;
+
+    String jsonString;
+    serializeJson(jsonData, jsonString);
+    http.begin(client, serverPath);
+    http.addHeader("Content-Type", "application/json");
+    int httpResponseCode = http.POST(jsonString);
+
+    if (httpResponseCode > 0) {
+        Serial.print("POST response: ");
+        Serial.println(httpResponseCode);
+    } else {
+        Serial.print("Error sending POST: ");
+        Serial.println(http.errorToString(httpResponseCode).c_str());
+    }
+    http.end();
+    lastPostTime = millis();
+  }
+}
+
+void postHeartbeatToDiagnose(int irValue, float bpm, int avgBpm, int ecgValue) {
+  if (millis() - lastPostTime >= POST_INTERVAL) {
+
+    WiFiClient client;
+    HTTPClient http;
+    String serverPath = "http://192.168.100.188:5000/api/send-to-diagnose";
+    StaticJsonDocument<200> jsonData;
+
     jsonData["IR"] = irValue;
     jsonData["thalachh"] = bpm;
     jsonData["AvgBPM"] = avgBpm;

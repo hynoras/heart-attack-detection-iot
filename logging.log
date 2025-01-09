@@ -351,3 +351,263 @@
 2024-12-16 22:31:01,415 - werkzeug - INFO - 192.168.100.123 - - [16/Dec/2024 22:31:01] "POST /api/add-sensor-data HTTP/1.1" 200 -
 2024-12-16 22:32:01,916 - werkzeug - INFO - 192.168.100.123 - - [16/Dec/2024 22:32:01] "POST /api/add-sensor-data HTTP/1.1" 200 -
 2024-12-16 22:33:02,461 - werkzeug - INFO - 192.168.100.123 - - [16/Dec/2024 22:33:02] "POST /api/add-sensor-data HTTP/1.1" 200 -
+2025-01-09 20:39:43,013 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.188:5000
+2025-01-09 20:39:43,014 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-09 20:39:43,015 - werkzeug - INFO -  * Restarting with stat
+2025-01-09 20:39:44,975 - werkzeug - WARNING -  * Debugger is active!
+2025-01-09 20:39:44,979 - werkzeug - INFO -  * Debugger PIN: 141-247-887
+2025-01-09 20:41:10,813 - board.py - DEBUG - Device already registered
+2025-01-09 20:41:10,815 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 20:41:10] "POST /api/register-device HTTP/1.1" 200 -
+2025-01-09 20:41:24,331 - werkzeug - INFO -  * Detected change in 'D:\\heart-attack-detection\\heart-attack-detection-iot\\controller\\Diagnosis\\diagnosis.py', reloading
+2025-01-09 20:41:24,395 - werkzeug - INFO -  * Restarting with stat
+2025-01-09 20:41:28,962 - werkzeug - WARNING -  * Debugger is active!
+2025-01-09 20:41:28,965 - werkzeug - INFO -  * Debugger PIN: 141-247-887
+2025-01-09 20:42:04,585 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 20:42:04] "POST /api/add-sensor-data HTTP/1.1" 200 -
+2025-01-09 20:43:05,216 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 20:43:05] "POST /api/add-sensor-data HTTP/1.1" 200 -
+2025-01-09 20:44:05,871 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 20:44:05] "POST /api/add-sensor-data HTTP/1.1" 200 -
+2025-01-09 20:48:22,080 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.188:5000
+2025-01-09 20:48:22,081 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-09 20:48:22,084 - werkzeug - INFO -  * Restarting with stat
+2025-01-09 20:48:25,737 - werkzeug - WARNING -  * Debugger is active!
+2025-01-09 20:48:25,753 - werkzeug - INFO -  * Debugger PIN: 141-247-887
+2025-01-09 20:49:04,202 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 20:49:04] "POST /api/add-sensor-data HTTP/1.1" 200 -
+2025-01-09 20:50:04,409 - werkzeug - INFO -  * Detected change in 'D:\\heart-attack-detection\\heart-attack-detection-iot\\controller\\Diagnosis\\diagnosis.py', reloading
+2025-01-09 20:50:04,455 - werkzeug - INFO -  * Restarting with stat
+2025-01-09 20:50:06,784 - werkzeug - WARNING -  * Debugger is active!
+2025-01-09 20:50:06,788 - werkzeug - INFO -  * Debugger PIN: 141-247-887
+2025-01-09 20:50:10,753 - werkzeug - INFO -  * Detected change in 'D:\\heart-attack-detection\\heart-attack-detection-iot\\controller\\Diagnosis\\diagnosis.py', reloading
+2025-01-09 20:50:10,793 - werkzeug - INFO -  * Restarting with stat
+2025-01-09 20:50:13,137 - werkzeug - WARNING -  * Debugger is active!
+2025-01-09 20:50:13,141 - werkzeug - INFO -  * Debugger PIN: 141-247-887
+2025-01-09 20:50:21,896 - werkzeug - INFO -  * Detected change in 'D:\\heart-attack-detection\\heart-attack-detection-iot\\controller\\Diagnosis\\diagnosis.py', reloading
+2025-01-09 20:50:21,943 - werkzeug - INFO -  * Restarting with stat
+2025-01-09 20:50:24,817 - werkzeug - WARNING -  * Debugger is active!
+2025-01-09 20:50:24,821 - werkzeug - INFO -  * Debugger PIN: 141-247-887
+2025-01-09 20:51:05,117 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 20:51:05] "POST /api/add-sensor-data HTTP/1.1" 200 -
+2025-01-09 20:52:05,693 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 20:52:05] "POST /api/add-sensor-data HTTP/1.1" 200 -
+2025-01-09 20:53:07,069 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 20:53:07] "POST /api/add-sensor-data HTTP/1.1" 200 -
+2025-01-09 20:54:07,651 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 20:54:07] "POST /api/add-sensor-data HTTP/1.1" 200 -
+2025-01-09 20:55:08,247 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 20:55:08] "POST /api/add-sensor-data HTTP/1.1" 200 -
+2025-01-09 21:01:16,180 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.188:5000
+2025-01-09 21:01:16,181 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-09 21:01:16,183 - werkzeug - INFO -  * Restarting with stat
+2025-01-09 21:01:19,818 - werkzeug - WARNING -  * Debugger is active!
+2025-01-09 21:01:19,824 - werkzeug - INFO -  * Debugger PIN: 141-247-887
+2025-01-09 21:01:46,181 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 21:01:46] "POST /api/add-sensor-data HTTP/1.1" 200 -
+2025-01-09 21:02:47,397 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 21:02:47] "POST /api/add-sensor-data HTTP/1.1" 200 -
+2025-01-09 21:03:23,004 - werkzeug - INFO -  * Detected change in 'D:\\heart-attack-detection\\heart-attack-detection-iot\\controller\\Diagnosis\\diagnosis.py', reloading
+2025-01-09 21:03:23,099 - werkzeug - INFO -  * Restarting with stat
+2025-01-09 21:03:27,770 - werkzeug - WARNING -  * Debugger is active!
+2025-01-09 21:03:27,774 - werkzeug - INFO -  * Debugger PIN: 141-247-887
+2025-01-09 21:03:54,153 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 21:03:54] "POST /api/add-sensor-data HTTP/1.1" 200 -
+2025-01-09 21:04:53,067 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 21:04:53] "POST /api/add-sensor-data HTTP/1.1" 200 -
+2025-01-09 21:05:54,347 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 21:05:54] "POST /api/add-sensor-data HTTP/1.1" 200 -
+2025-01-09 21:06:56,950 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 21:06:56] "POST /api/add-sensor-data HTTP/1.1" 200 -
+2025-01-09 21:07:57,586 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 21:07:57] "POST /api/add-sensor-data HTTP/1.1" 200 -
+2025-01-09 21:08:58,793 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 21:08:58] "POST /api/add-sensor-data HTTP/1.1" 200 -
+2025-01-09 21:10:00,004 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 21:10:00] "POST /api/add-sensor-data HTTP/1.1" 200 -
+2025-01-09 21:11:00,703 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 21:11:00] "POST /api/add-sensor-data HTTP/1.1" 200 -
+2025-01-09 21:12:01,326 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 21:12:01] "POST /api/add-sensor-data HTTP/1.1" 200 -
+2025-01-09 22:09:39,360 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:09:39] "[35m[1mPOST /api/register-device HTTP/1.1[0m" 500 -
+2025-01-09 22:09:54,462 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.188:5000
+2025-01-09 22:09:54,464 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-09 22:09:54,469 - werkzeug - INFO -  * Restarting with stat
+2025-01-09 22:09:59,362 - werkzeug - WARNING -  * Debugger is active!
+2025-01-09 22:09:59,378 - werkzeug - INFO -  * Debugger PIN: 141-247-887
+2025-01-09 22:10:34,557 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:10:34] "POST /api/add-sensor-data HTTP/1.1" 200 -
+2025-01-09 22:11:55,563 - board.py - DEBUG - Device already registered
+2025-01-09 22:11:55,564 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:11:55] "POST /api/register-device HTTP/1.1" 200 -
+2025-01-09 22:12:48,046 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-09 22:12:48,193 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /api/patient/manual/receive-sensor-data HTTP/1.1" 200 114
+2025-01-09 22:12:48,194 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:12:48] "POST /api/send-to-diagnose HTTP/1.1" 200 -
+2025-01-09 22:13:48,469 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-09 22:14:05,221 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /api/patient/manual/receive-sensor-data HTTP/1.1" 200 115
+2025-01-09 22:14:05,238 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:14:05] "POST /api/send-to-diagnose HTTP/1.1" 200 -
+2025-01-09 22:14:53,358 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-09 22:14:53,367 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /api/patient/manual/receive-sensor-data HTTP/1.1" 200 112
+2025-01-09 22:14:53,369 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:14:53] "POST /api/send-to-diagnose HTTP/1.1" 200 -
+2025-01-09 22:15:53,425 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-09 22:15:53,428 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /api/patient/manual/receive-sensor-data HTTP/1.1" 200 115
+2025-01-09 22:15:53,429 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:15:53] "POST /api/send-to-diagnose HTTP/1.1" 200 -
+2025-01-09 22:16:31,061 - board.py - DEBUG - Device already registered
+2025-01-09 22:16:31,062 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:16:31] "POST /api/register-device HTTP/1.1" 200 -
+2025-01-09 22:17:19,221 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-09 22:17:19,230 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /api/patient/manual/receive-sensor-data HTTP/1.1" 200 114
+2025-01-09 22:17:19,232 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:17:19] "POST /api/send-to-diagnose HTTP/1.1" 200 -
+2025-01-09 22:18:19,285 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-09 22:18:19,292 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /api/patient/manual/receive-sensor-data HTTP/1.1" 200 116
+2025-01-09 22:18:19,293 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:18:19] "POST /api/send-to-diagnose HTTP/1.1" 200 -
+2025-01-09 22:19:19,327 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-09 22:19:19,332 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /api/patient/manual/receive-sensor-data HTTP/1.1" 200 114
+2025-01-09 22:19:19,333 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:19:19] "POST /api/send-to-diagnose HTTP/1.1" 200 -
+2025-01-09 22:19:42,445 - werkzeug - INFO -  * Detected change in 'D:\\heart-attack-detection\\heart-attack-detection-iot\\controller\\Diagnosis\\diagnosis.py', reloading
+2025-01-09 22:19:42,844 - werkzeug - INFO -  * Restarting with stat
+2025-01-09 22:20:27,927 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.188:5000
+2025-01-09 22:20:27,928 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-09 22:20:27,930 - werkzeug - INFO -  * Restarting with stat
+2025-01-09 22:20:35,447 - werkzeug - WARNING -  * Debugger is active!
+2025-01-09 22:20:35,457 - werkzeug - INFO -  * Debugger PIN: 141-247-887
+2025-01-09 22:21:19,402 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-09 22:21:19,412 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /api/patient/manual/receive-sensor-data HTTP/1.1" 200 116
+2025-01-09 22:21:21,103 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:21:21] "POST /api/send-to-diagnose HTTP/1.1" 200 -
+2025-01-09 22:22:38,168 - board.py - DEBUG - Device already registered
+2025-01-09 22:22:38,168 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:22:38] "POST /api/register-device HTTP/1.1" 200 -
+2025-01-09 22:23:43,240 - board.py - DEBUG - Device already registered
+2025-01-09 22:23:43,241 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:23:43] "POST /api/register-device HTTP/1.1" 200 -
+2025-01-09 22:24:38,131 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-09 22:24:38,168 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /api/add-sensor-data HTTP/1.1" 404 207
+2025-01-09 22:24:38,170 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:24:38] "POST /api/send-to-predict-api HTTP/1.1" 200 -
+2025-01-09 22:25:38,212 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-09 22:25:38,241 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /api/add-sensor-data HTTP/1.1" 404 207
+2025-01-09 22:25:38,242 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:25:38] "POST /api/send-to-predict-api HTTP/1.1" 200 -
+2025-01-09 22:26:38,288 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-09 22:26:38,294 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /api/add-sensor-data HTTP/1.1" 404 207
+2025-01-09 22:26:38,294 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:26:38] "POST /api/send-to-predict-api HTTP/1.1" 200 -
+2025-01-09 22:27:38,331 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-09 22:27:38,337 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /api/add-sensor-data HTTP/1.1" 404 207
+2025-01-09 22:27:38,338 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:27:38] "POST /api/send-to-predict-api HTTP/1.1" 200 -
+2025-01-09 22:28:38,368 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-09 22:28:38,375 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /api/add-sensor-data HTTP/1.1" 404 207
+2025-01-09 22:28:38,375 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:28:38] "POST /api/send-to-predict-api HTTP/1.1" 200 -
+2025-01-09 22:29:38,414 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-09 22:29:38,427 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /api/add-sensor-data HTTP/1.1" 404 207
+2025-01-09 22:29:38,429 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:29:38] "POST /api/send-to-predict-api HTTP/1.1" 200 -
+2025-01-09 22:30:11,325 - werkzeug - INFO -  * Detected change in 'D:\\heart-attack-detection\\heart-attack-detection-iot\\controller\\Diagnosis\\diagnosis.py', reloading
+2025-01-09 22:30:11,503 - werkzeug - INFO -  * Restarting with stat
+2025-01-09 22:30:15,978 - werkzeug - WARNING -  * Debugger is active!
+2025-01-09 22:30:16,012 - werkzeug - INFO -  * Debugger PIN: 141-247-887
+2025-01-09 22:30:26,289 - werkzeug - INFO -  * Detected change in 'D:\\heart-attack-detection\\heart-attack-detection-iot\\controller\\Diagnosis\\diagnosis.py', reloading
+2025-01-09 22:30:26,331 - werkzeug - INFO -  * Restarting with stat
+2025-01-09 22:30:29,807 - werkzeug - WARNING -  * Debugger is active!
+2025-01-09 22:30:29,811 - werkzeug - INFO -  * Debugger PIN: 141-247-887
+2025-01-09 22:30:35,085 - werkzeug - INFO -  * Detected change in 'D:\\heart-attack-detection\\heart-attack-detection-iot\\controller\\Diagnosis\\diagnosis.py', reloading
+2025-01-09 22:30:35,125 - werkzeug - INFO -  * Restarting with stat
+2025-01-09 22:31:12,267 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.188:5000
+2025-01-09 22:31:12,267 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-09 22:31:12,268 - werkzeug - INFO -  * Restarting with stat
+2025-01-09 22:31:20,936 - werkzeug - WARNING -  * Debugger is active!
+2025-01-09 22:31:20,940 - werkzeug - INFO -  * Debugger PIN: 141-247-887
+2025-01-09 22:31:40,518 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-09 22:31:40,603 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /api/add-sensor-data HTTP/1.1" 404 207
+2025-01-09 22:31:40,605 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:31:40] "POST /api/send-to-predict-api HTTP/1.1" 200 -
+2025-01-09 22:32:17,484 - werkzeug - INFO -  * Detected change in 'D:\\heart-attack-detection\\heart-attack-detection-iot\\controller\\Diagnosis\\diagnosis.py', reloading
+2025-01-09 22:32:17,540 - werkzeug - INFO -  * Restarting with stat
+2025-01-09 22:32:22,381 - werkzeug - WARNING -  * Debugger is active!
+2025-01-09 22:32:22,385 - werkzeug - INFO -  * Debugger PIN: 141-247-887
+2025-01-09 22:32:40,693 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-09 22:32:40,704 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /api/add-sensor-data HTTP/1.1" 404 207
+2025-01-09 22:32:40,707 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:32:40] "POST /api/send-to-predict-api HTTP/1.1" 200 -
+2025-01-09 22:34:05,613 - board.py - DEBUG - Device already registered
+2025-01-09 22:34:05,614 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:34:05] "POST /api/register-device HTTP/1.1" 200 -
+2025-01-09 22:34:19,090 - board.py - DEBUG - Device already registered
+2025-01-09 22:34:19,090 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:34:19] "POST /api/register-device HTTP/1.1" 200 -
+2025-01-09 22:34:26,679 - board.py - DEBUG - Device already registered
+2025-01-09 22:34:26,681 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:34:26] "POST /api/register-device HTTP/1.1" 200 -
+2025-01-09 22:34:35,217 - board.py - DEBUG - Device already registered
+2025-01-09 22:34:35,218 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:34:35] "POST /api/register-device HTTP/1.1" 200 -
+2025-01-09 22:34:44,955 - board.py - DEBUG - Device already registered
+2025-01-09 22:34:44,955 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:34:44] "POST /api/register-device HTTP/1.1" 200 -
+2025-01-09 22:34:54,682 - board.py - DEBUG - Device already registered
+2025-01-09 22:34:54,683 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:34:54] "POST /api/register-device HTTP/1.1" 200 -
+2025-01-09 22:35:09,130 - board.py - DEBUG - Device already registered
+2025-01-09 22:35:09,131 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:35:09] "POST /api/register-device HTTP/1.1" 200 -
+2025-01-09 22:35:16,972 - board.py - DEBUG - Device already registered
+2025-01-09 22:35:16,973 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:35:16] "POST /api/register-device HTTP/1.1" 200 -
+2025-01-09 22:35:23,509 - board.py - DEBUG - Device already registered
+2025-01-09 22:35:23,510 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:35:23] "POST /api/register-device HTTP/1.1" 200 -
+2025-01-09 22:35:32,039 - board.py - DEBUG - Device already registered
+2025-01-09 22:35:32,040 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:35:32] "POST /api/register-device HTTP/1.1" 200 -
+2025-01-09 22:35:42,552 - board.py - DEBUG - Device already registered
+2025-01-09 22:35:42,553 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:35:42] "POST /api/register-device HTTP/1.1" 200 -
+2025-01-09 22:36:14,157 - board.py - DEBUG - Device already registered
+2025-01-09 22:36:14,158 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:36:14] "POST /api/register-device HTTP/1.1" 200 -
+2025-01-09 22:36:23,534 - board.py - DEBUG - Device already registered
+2025-01-09 22:36:23,535 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:36:23] "POST /api/register-device HTTP/1.1" 200 -
+2025-01-09 22:36:33,947 - board.py - DEBUG - Device already registered
+2025-01-09 22:36:33,947 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:36:33] "POST /api/register-device HTTP/1.1" 200 -
+2025-01-09 22:37:03,320 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:37:03] "[35m[1mPOST /api/register-device HTTP/1.1[0m" 500 -
+2025-01-09 22:37:03,322 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:37:03] "[35m[1mPOST /api/register-device HTTP/1.1[0m" 500 -
+2025-01-09 22:37:30,079 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:37:30] "[35m[1mPOST /api/register-device HTTP/1.1[0m" 500 -
+2025-01-09 22:37:38,605 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:37:38] "[35m[1mPOST /api/register-device HTTP/1.1[0m" 500 -
+2025-01-09 22:37:48,335 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:37:48] "[35m[1mPOST /api/register-device HTTP/1.1[0m" 500 -
+2025-01-09 22:37:56,105 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:37:56] "[35m[1mPOST /api/register-device HTTP/1.1[0m" 500 -
+2025-01-09 22:38:04,617 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:38:04] "[35m[1mPOST /api/register-device HTTP/1.1[0m" 500 -
+2025-01-09 22:38:12,418 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:38:12] "[35m[1mPOST /api/register-device HTTP/1.1[0m" 500 -
+2025-01-09 22:38:20,495 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:38:20] "[35m[1mPOST /api/register-device HTTP/1.1[0m" 500 -
+2025-01-09 22:38:27,032 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:38:27] "[35m[1mPOST /api/register-device HTTP/1.1[0m" 500 -
+2025-01-09 22:38:41,878 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:38:41] "[35m[1mPOST /api/register-device HTTP/1.1[0m" 500 -
+2025-01-09 22:39:03,233 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.188:5000
+2025-01-09 22:39:03,233 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-09 22:39:03,234 - werkzeug - INFO -  * Restarting with stat
+2025-01-09 22:39:16,915 - werkzeug - WARNING -  * Debugger is active!
+2025-01-09 22:39:16,926 - werkzeug - INFO -  * Debugger PIN: 141-247-887
+2025-01-09 22:39:37,479 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-09 22:39:37,674 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /api/add-sensor-data HTTP/1.1" 404 207
+2025-01-09 22:39:37,675 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:39:37] "POST /api/send-to-predict-api HTTP/1.1" 200 -
+2025-01-09 22:40:37,762 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-09 22:40:37,770 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /api/add-sensor-data HTTP/1.1" 404 207
+2025-01-09 22:40:37,772 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:40:37] "POST /api/send-to-predict-api HTTP/1.1" 200 -
+2025-01-09 22:41:37,797 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-09 22:41:37,800 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /api/add-sensor-data HTTP/1.1" 404 207
+2025-01-09 22:41:37,801 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:41:37] "POST /api/send-to-predict-api HTTP/1.1" 200 -
+2025-01-09 22:42:13,934 - board.py - DEBUG - Device already registered
+2025-01-09 22:42:13,936 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:42:13] "POST /api/register-device HTTP/1.1" 200 -
+2025-01-09 22:43:09,999 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-09 22:43:10,005 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /api/patient/manual/receive-sensor-data HTTP/1.1" 200 107
+2025-01-09 22:43:10,024 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:43:10] "[35m[1mPOST /api/send-to-diagnose HTTP/1.1[0m" 500 -
+2025-01-09 22:43:46,341 - werkzeug - INFO -  * Detected change in 'D:\\heart-attack-detection\\heart-attack-detection-iot\\controller\\Diagnosis\\diagnosis.py', reloading
+2025-01-09 22:43:46,413 - werkzeug - INFO -  * Restarting with stat
+2025-01-09 22:43:52,242 - werkzeug - WARNING -  * Debugger is active!
+2025-01-09 22:43:52,248 - werkzeug - INFO -  * Debugger PIN: 141-247-887
+2025-01-09 22:43:53,827 - werkzeug - INFO -  * Detected change in 'D:\\heart-attack-detection\\heart-attack-detection-iot\\controller\\Diagnosis\\diagnosis.py', reloading
+2025-01-09 22:43:53,875 - werkzeug - INFO -  * Restarting with stat
+2025-01-09 22:44:36,790 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.188:5000
+2025-01-09 22:44:36,792 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-09 22:44:36,794 - werkzeug - INFO -  * Restarting with stat
+2025-01-09 22:44:40,233 - werkzeug - WARNING -  * Debugger is active!
+2025-01-09 22:44:40,240 - werkzeug - INFO -  * Debugger PIN: 141-247-887
+2025-01-09 22:45:12,452 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-09 22:45:12,456 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /api/patient/manual/receive-sensor-data HTTP/1.1" 200 114
+2025-01-09 22:45:12,457 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:45:12] "POST /api/send-to-diagnose HTTP/1.1" 200 -
+2025-01-09 22:46:14,683 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-09 22:46:14,782 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /api/patient/manual/receive-sensor-data HTTP/1.1" 200 116
+2025-01-09 22:46:14,783 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:46:14] "POST /api/send-to-diagnose HTTP/1.1" 200 -
+2025-01-09 22:47:17,027 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-09 22:47:17,032 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /api/patient/manual/receive-sensor-data HTTP/1.1" 200 114
+2025-01-09 22:47:17,033 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:47:17] "POST /api/send-to-diagnose HTTP/1.1" 200 -
+2025-01-09 22:48:19,302 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-09 22:48:19,310 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /api/patient/manual/receive-sensor-data HTTP/1.1" 200 116
+2025-01-09 22:48:19,311 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:48:19] "POST /api/send-to-diagnose HTTP/1.1" 200 -
+2025-01-09 22:49:21,554 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-09 22:49:21,572 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /api/patient/manual/receive-sensor-data HTTP/1.1" 200 116
+2025-01-09 22:49:21,574 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:49:21] "POST /api/send-to-diagnose HTTP/1.1" 200 -
+2025-01-09 22:50:23,913 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-09 22:50:23,916 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /api/patient/manual/receive-sensor-data HTTP/1.1" 200 115
+2025-01-09 22:50:23,917 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:50:23] "POST /api/send-to-diagnose HTTP/1.1" 200 -
+2025-01-09 22:51:26,181 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-01-09 22:51:26,251 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /api/patient/manual/receive-sensor-data HTTP/1.1" 200 116
+2025-01-09 22:51:26,252 - werkzeug - INFO - 192.168.100.123 - - [09/Jan/2025 22:51:26] "POST /api/send-to-diagnose HTTP/1.1" 200 -
