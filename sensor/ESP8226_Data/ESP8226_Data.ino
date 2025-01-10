@@ -130,7 +130,6 @@ void handleBPM() {
     Serial.println();
     int ecgValue = analogRead(ECG_PIN);
     postHeartbeatToAPI(irValue, beatsPerMinute, beatAvg, ecgValue);
-    delay(1000);
     postHeartbeatToDiagnose(irValue, beatsPerMinute, beatAvg, ecgValue);
 }
 

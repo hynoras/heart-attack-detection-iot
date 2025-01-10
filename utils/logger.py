@@ -3,7 +3,7 @@ import logging
 class Logger:
     def __init__(self, name: str):
         logging.basicConfig(
-            level=logging.DEBUG,
+            level=logging.INFO,
             format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
             handlers=[
                 logging.FileHandler("logging.log"),
