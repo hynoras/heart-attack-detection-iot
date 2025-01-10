@@ -14,4 +14,6 @@ def create_app():
     app.register_blueprint(board_route, url_prefix = url_prefix)
     app.register_blueprint(dashboard_route, url_prefix = url_prefix)
 
+
+
     return app
