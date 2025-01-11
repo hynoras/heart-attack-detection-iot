@@ -34,6 +34,7 @@ class DataSender:
     def add_sensor_data(data):
         required_fields = ['unique_id', 'thalachh', 'restecg', 'AvgBPM']
         missing_fields = [field for field in required_fields if field not in data]
+        data['timestamp'] = time.strftime('%Y-%m-%d %H:%M:%S')  
 
         if missing_fields:
             return jsonify({"error": f"Missing fields: {', '.join(missing_fields)}"}), 400
@@ -41,8 +42,8 @@ class DataSender:
         cur = db.cursor()
         try:
             cur.execute(
-                'INSERT INTO sensor_data (device_id, thalachh, restecg, avg_bpm) VALUES (%s, %s, %s, %s)',
-                (data['unique_id'], data['thalachh'], data['restecg'], data['AvgBPM'])
+                'INSERT INTO sensor_data (device_id, thalachh, restecg, avg_bpm, timestamp) VALUES (%s, %s, %s, %s, %s)',
+                (data['unique_id'], data['thalachh'], data['restecg'], data['AvgBPM'], data['timestamp'])
             )
             db.commit()
             return jsonify({"message": "Data stored successfully"}), 200
