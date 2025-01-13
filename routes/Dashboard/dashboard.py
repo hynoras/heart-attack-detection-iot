@@ -18,16 +18,16 @@ def get_avg_BPM_data():
 def post_heartbeat_data():
     return post_heartbeat()
 
-def auto_post_data():
-    while True:
-        data = generate_random_data()  
-        try:
-            response = requests.post("http://127.0.0.1:5000/api/heartbeat/add", json=data)
-            print(f"POST Response: {response.status_code}, {response.json()}")
-        except Exception as e:
-            print(f"Error sending POST request: {e}")
-        time.sleep(60) 
+# def auto_post_data():
+#     while True:
+#         data = generate_random_data()  
+#         try:
+#             response = requests.post("http://127.0.0.1:5000/api/heartbeat/add", json=data)
+#             print(f"POST Response: {response.status_code}, {response.json()}")
+#         except Exception as e:
+#             print(f"Error sending POST request: {e}")
+#         time.sleep(60) 
 
-thread = threading.Thread(target=auto_post_data)
-thread.daemon = True  
-thread.start()
+# thread = threading.Thread(target=auto_post_data)
+# thread.daemon = True  
+# thread.start()
