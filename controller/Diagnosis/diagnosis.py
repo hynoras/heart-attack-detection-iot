@@ -9,20 +9,22 @@ logger = Logger('diagnosis.py')
 class DataSender:
     @staticmethod
     def send_to_predict():
-        # manual_url = 'http://127.0.0.1:5000/api/patient/manual/receive-sensor-data'
+        manual_url = 'http://127.0.0.1:5000/api/patient/manual/receive-sensor-data'
         data = request.get_json()
         
         BPM = data.get('thalachh')
         ECG = data.get('restecg')
 
         try:
-            DataSender.add_sensor_data(data)
+            response = DataSender.add_sensor_data(data)
+            if response[1] != 200:
+                return response
             sensor_data = {
                 "thalachh": BPM,
                 "restecg": ECG,
             }
 
-            # requests.post(manual_url, json=sensor_data)
+            requests.post(manual_url, json=sensor_data)
             logger.info('Send data to main server successfully!')
 
             return jsonify({"message": "Data stored and sent successfully"}), 200
